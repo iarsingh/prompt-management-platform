@@ -1,5 +1,12 @@
 # Prompt Management Platform
 
+## Overview
+
+A small registry for LLM prompt versions. You register a prompt version through `POST /models`, promote one to champion through `POST /promote`, and read the current champion from `GET /champion`, so the prompt in use is always an explicit, recorded choice. The README also describes a `/v1` ops plane for workspaces, tenant isolation, job approval and audit.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** Local lab with tests; it does not call a hosted model and refuses production apply.
+
 <!-- project-guide:start -->
 ## Project guide
 
